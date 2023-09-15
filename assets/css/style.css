@@ -1,0 +1,360 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.up-btn {
+  position: fixed;
+  display: flex;
+justify-content: center;
+align-items: center;
+
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px; 
+  height: 25px;
+  width: 25px;
+  background-color: #488e9e;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "main"
+    "footer";
+}
+
+menu {
+  grid-area: menu;
+  background-color: #c2ffff;
+  padding: 25px;
+  height: 50vh;
+}
+menu {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+}
+
+main {
+  grid-area: main;
+  background-color: #0e9d9d;
+  padding: 25px;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 15px;
+  gap: 15px;
+}
+
+
+
+.train-title {
+  display: flex;
+  color: #065567;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  align-items: center;
+}
+
+.tren-logo {
+  max-width: 80pt;
+  height: auto;
+  margin-top: 14px;
+}
+
+.tren-logo {
+}
+.tren-logo:hover {
+  transition: transform 1s;
+  transform: translate(-500px);
+  transition-duration: 6s;
+}
+
+.trenes {
+  color: #065567;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  font-size: 30pt;
+}
+
+a {
+  text-decoration-line: none;
+  color: #21aca5;
+}
+
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fotito:hover {
+  animation: slide-in 1000ms;
+  animation-delay: 300ms;
+}
+
+
+
+.carta img {
+  height: 300pt;
+  width: 300pt;
+  padding: 20px;
+}
+.carta {
+  width: 100%;
+  background-color: white;
+  border: solid 2px #56aeb3;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #1d818c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .carta-text {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+footer {
+  grid-area: footer;
+  background-color: #c2ffff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+.grupo-tren {
+  overflow: hidden;
+}
+
+.trencito {
+  height: 200px;
+  width: auto; 
+  }
+
+.trencito:hover {
+  transition: transform 1s;
+  transform: translate(1300px);
+  transition-duration: 6s;
+}
+
+.grupo-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot {
+
+  padding: 15px;
+
+  .letra {
+    font-size: 20pt;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #065567;
+    text-align: center;
+    font-weight: 500;
+    justify-content: center;
+  }
+}
+
+.caja-letra{
+  background-color: #abd7d7;
+  border: solid 1px rgb(73, 210, 252);
+  border-radius: 10px;
+  
+  
+  }
+
+
+
+/* DESKTOP */
+@media(min-width: 576px){ 
+
+  .up-btn {
+    display: none;
+  
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu main main main main main main main main main main main main"
+    "menu main main main main main main main main main main main main "
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+menu {
+  grid-area: menu;
+  background-color: #c2ffff;
+  padding: 25px;
+  height: 100vh;
+}
+menu {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  grid-area: main;
+  background-color: #0e9d9d;
+  padding: 25px;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 15px;
+  gap: 15px;
+}
+
+.train-title {
+  display: flex;
+  color: #065567;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  align-items: center;
+}
+
+.tren-logo {
+  max-width: 80pt;
+  height: auto;
+  margin-top: 14px;
+}
+
+.tren-logo {
+}
+.tren-logo:hover {
+  transition: transform 1s;
+  transform: translate(-500px);
+  transition-duration: 6s;
+}
+
+.trenes {
+  color: #065567;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  font-size: 30pt;
+}
+
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fotito:hover {
+  animation: slide-in 1000ms;
+  animation-delay: 300ms;
+}
+
+
+a {
+  text-decoration-line: none;
+  color: #21aca5;
+}
+
+.carta img {
+  height: 300pt;
+  width: 300pt;
+  padding: 20px;
+}
+.carta {
+  width: 100%;
+  background-color: white;
+  border: solid 2px #56aeb3;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #1d818c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .carta-text {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+
+
+footer {
+  grid-area: footer;
+  background-color: #c2ffff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+.grupo-tren {
+  overflow: hidden;
+}
+
+.trencito {
+height: 200px;
+width: auto;
+margin-left: 22%;
+
+}
+.trencito:hover {
+  transition: transform 1s;
+  transform: translate(1300px);
+  transition-duration: 6s;
+  
+  
+}
+
+.grupo-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot {
+
+  padding: 15px;
+
+  .letra {
+    font-size: 20pt;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #065567;
+    text-align: center;
+    font-weight: 100;
+    justify-content: center;
+  }
+}
+}
+
+.caja-letra{
+background-color: #abd7d7;
+border: solid 1px rgb(73, 210, 252);
+border-radius: 10px;
+
+
+}
